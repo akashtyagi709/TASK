@@ -1,0 +1,38 @@
+<h1>TASK 1</h1>
+<h1>First Api Data</h1>
+<div class="container">
+  <h2>Country : {{country}}</h2>
+  <h2>country abbreviation : {{countryabbreviation}}</h2>
+  <h2>Post code: {{postcode}}</h2>
+<div *ngFor="let data of placeArray">
+  <h3>Latitude : {{data.latitude}}</h3>
+  <h3>Longitude : {{data.longitude}}</h3>
+  <h3>Place Name : {{data['place name']}}</h3>
+  <h3>State : {{data.state}}</h3>
+  <h3>State Abbreviation: {{data['state abbreviation']}}</h3>
+</div>
+</div>
+
+<h1>Second Api Data</h1>
+<div class="container">
+  <h2>Country : {{country2}}</h2>
+  <h2>country abbreviation : {{countryabbreviation2}}</h2>
+  <h2>Post code: {{postcode2}}</h2>
+<div *ngFor="let data of placeArray2">
+  <h3>Latitude : {{data.latitude}}</h3>
+  <h3>Longitude : {{data.longitude}}</h3>
+  <h3>Place Name : {{data['place name']}}</h3>
+  <h3>State : {{data.state}}</h3>
+  <h3>State Abbreviation: {{data['state abbreviation']}}</h3>
+</div>
+</div>
+
+<h1 style="color:red">Second Task</h1>
+
+
+<img src="{{image_U_R_L}}" alt="not Found" width="350px">
+<br>
+
+<button (click)="onImageChnage()"><h3>Show Image</h3></button><br>
+<router-outlet></router-outlet>
+
